@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+<section id="home">
+    <h1 class="h-primary">Welcome to Nrityashala</h1>
+    <p class="h-secondary"> Elevate Your Dance <br>
+        Create. Dance. Live.
+    </p>
+</section>
+
+<section id = "images">
+    <img src="../static/img/Collage1.jpeg" alt="Dance">
+    <img src="../static/img/Collage2.jpeg" alt="Dance">
+</section>
+
+<section id="contact" class="bgcolor">
+    
+    <div class="container">
+        <h1 class="h-primary center background">Contact us</h1>
+        <div class="background, space">Contact number: 98635XXXXX, 78327XXXXX <br></div>
+        <div class="background, space">E-mail address: nrityashala@gmail.com</div>
+        <div class="background">
+            <img src="../static/img/insta.png" alt="Instagram">
+            <div>
+                <a class = "links" href="https://www.instagram.com/" target="_blank">nrityashala_official</a>
+            </div>
+        </div>
+        <div class="background">
+            <img src="../static/img/facebook-final.png" alt="Facebook">
+            <div>
+                <a class = "links" href="https://www.facebook.com/" target="_blank">nrityashala_fb</a>
+            </div>
+        </div>
+        <div class="background">
+            <img src="../static/img/twitter.png" alt="Twitter">
+            <div>
+                <a class = "links" href="https://www.twitter.com/" target="_blank">nrityashala</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock body %}

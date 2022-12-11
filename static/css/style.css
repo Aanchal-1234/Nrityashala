@@ -1,0 +1,316 @@
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: gray;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    /* opacity: 0.6; */
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    /* margin: 10px 34px; */
+    margin: 0px 11px;
+}
+
+#logo img{
+    /* height: 59px;
+    margin: 3px 6px; */
+    height: 56px;
+    margin: 3px 10px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:0px 200px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../img/BG_canva.png') no-repeat center center/cover;
+    height: 100%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:2;
+}
+
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    height: 500px;
+}
+
+#home p{
+    color: black;
+    text-align: left;
+    font-size: 1.5rem;
+    height: 4000px;
+    font-family: 'Bree Serif', serif;
+}
+
+/* #home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif';
+    font-size: 1 rem;
+} */
+
+#images{
+    margin-top: 0px;
+    padding-top: 250px;
+    /* display: flex; */
+}
+
+#images img{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    /* height: 100%; */
+}
+
+/* About-us Section */
+#about-us{
+    margin: 34px;
+    display: flex;
+}
+#about-us .box{ 
+    border: 2px solid brown;
+    padding: 30px;
+    margin: 11px 17px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    grid-template-columns: min-content 1fr;
+}
+
+#about-us .box img{ 
+   height: 160px;
+   margin: 10px;
+   padding: 5px;
+
+}
+
+#about-us .box div p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/* Contact us */
+#contact{
+    color: black;
+}
+
+#contact h1{
+    color: black;
+    text-align: center;
+}
+
+/* #contact.container{
+    color: white;
+    padding: 30px;
+} */ 
+
+/* #contact li{
+    text-decoration: none;
+    align-items: center;
+} */
+
+/* #contact li img{ 
+    height: 25px;
+    margin: 10px;
+    padding: 5px;
+    display: grid;
+} */
+
+/* #contact p li{
+    color: black;
+} */
+
+.headings{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    /* grid-column-gap: 7rem;
+    grid-row-gap: 1rem; */
+    grid-gap: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.schedule{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    /* grid-column-gap: 7rem;
+    grid-row-gap: 1rem; */
+    grid-gap: 1rem;
+
+}
+.box{
+    border: 2px solid black;
+    /* background-color: rgb(228, 188, 228); */
+    /* background-color: rgb(166 156 166); */
+    background-color: rgb(186 215 250);
+    padding: 10px;
+    margin: 5px;
+}
+/* .box:first-child{ */
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    /* grid-column: 1 / span 3;
+    grid-row: 1 / span 3; */
+/* } */
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+.bgcolor{
+    background-color: gray;
+}
+
+.background{
+    background-color: grey;
+    color: black;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.space{
+    line-height: 2;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+}
+
+.links:hover{
+    color: white;
+}
+
+.container{
+    /* display: block; */
+    border: black;
+    /* width: 70%; */
+    padding-left: 470px;
+    /* height: 100px; */
+}
+
+.container img{
+    /* height: 10px; */
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 10px;
+    display: grid;
+    justify-self: center;
+}
+
+.footalign{
+    margin: 10px;
+    padding: 10px;
+    /* width: 100%; */
+    background-color: black;
+    color: white;
+    
+}

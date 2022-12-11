@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> {% block title %}{% endblock title %} | Nrityashala</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="../static/css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../static/img/logo.png" alt="My Dance Academy">
+        </div>
+        <ul>
+            <li class="item"><a href="/"> Home </a></li>
+            <li class="item"><a href="/about"> About </a></li>
+            <li class="item"><a href="/classes"> Classes </a></li>
+            <li class="item"><a href="/#contact"> Contact Us </a></li>
+            <li class="item"><a href="/signup"> Register/Login </a></li>
+        </ul>
+    </nav>
+
+{% block body %}{% endblock body %}
+
+<footer>
+    <div class="center footalign">
+        Copyright &copy; www.Nrityashala.com. All rights reserved!
+    </div>
+</footer>
+
+</body>
+</html>
